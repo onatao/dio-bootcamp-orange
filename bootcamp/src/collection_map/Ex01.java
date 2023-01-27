@@ -3,6 +3,7 @@ package collection_map;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -45,7 +46,40 @@ public class Ex01 {
         System.out.println("Modelo mais eficiente: " + modelo);
         System.out.println("Consumo: " + melhorConsumo);
 
+        // Exiba o modelo menos econômico e seu consumo
+        Double menosEficiente = Collections.min(carrosPopulares.values());
+        String modeloMenos = "";
 
+        for (Map.Entry<String, Double> obj: entry) {
+            if (obj.getValue().equals(menosEficiente)) {
+                modeloMenos = obj.getKey();
+                System.out.println(menosEficiente);
+                System.out.println(modeloMenos);
+            }
+        }
+
+        // Exiba a soma dos consumos
+        Iterator<Double> valor = carrosPopulares.values().iterator();
+        Double soma = 0d;
+        while (valor.hasNext()) {
+            soma =+ valor.next();
+        }
+        System.out.println("A soma dos consumos é de: " + soma);
+
+        // Exibir a média de consumo
+        System.out.println(soma/carrosPopulares.size());
+
+        // Remova modelo que possuem consumo igual a 15,6
+        Iterator<Double> remover = carrosPopulares.values().iterator();
+        
+        while (remover.hasNext()) {
+            if (remover.next().equals(15.6d)) remover.remove();;            
+        }
+        System.out.println(carrosPopulares);
+
+        
+        
+        
 
 
 
