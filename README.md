@@ -1,7 +1,11 @@
 # dio-bootcamp-orange
-Repositório referente ao bootcamp OrangeTech+ oferecido pela Inter na plataforma Digital Innovation One.
+Repositório referente ao bootcamp OrangeTech+ promovido pelo banco Inter na plataforma Digital Innovation One.
 
 Bootcamp interativo de 90 horas focado em Desenvolvimento Java Back End.
 
-Tecnologias abordadas 
-Java e SpringBoot
+Tecnologias abordadas: Java OOP, Java Collection, Spring Boot, Lambda expressions, Maven, Stream API, dentre outras.
+
+
+
+![orangetechcertificate](assets/orangetechcertificate.png)
+
